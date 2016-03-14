@@ -11,7 +11,7 @@
             header('location:packages.php?msg=Fill all input data for package before submission.');
         } else {
 
-            include ('.\DBCon.php');
+            include ('./DBCon.php');
             //checking peimary key exsistance
             // preparing 
             
