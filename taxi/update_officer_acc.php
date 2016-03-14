@@ -48,7 +48,7 @@
         } else {
             
 
-            include ('.\DBCon.php');
+            include ('./DBCon.php');
             //checking peimary key exsistance
 
             $query1 = "SELECT PASSWORD FROM `officer` JOIN officer_login WHERE officer.O_NIC=officer_login.O_NIC and user_name=?";
