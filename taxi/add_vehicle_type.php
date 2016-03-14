@@ -12,7 +12,7 @@
             header('location: vehicles.php?msg=Fill all vehicle type data before enter.');
         } else {
 
-            include ('.\DBCon.php');
+            include ('./DBCon.php');
             //checking peimary key exsistance
 
             $query1 = "SELECT type_id FROM vehicle_type WHERE type_id=?";
