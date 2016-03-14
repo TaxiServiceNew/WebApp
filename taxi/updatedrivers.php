@@ -13,7 +13,7 @@
         if ($dnic == '' || $fname == '' || $lname == '' || $lno == '' || $addr == '') {
             header('location: drivers.php?msg=Fill all input data before submission.');
         } else {
-            include ('.\DBCon.php');
+            include ('./DBCon.php');
             //checking peimary key exsistance done previously
             //UPDATE device SET description=?,on_service=?,bought_date=?,end_date=? WHERE device_id=?
             // preparing 
