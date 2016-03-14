@@ -39,7 +39,7 @@
         } else {
             
 
-            include ('.\DBCon.php');
+            include ('./DBCon.php');
             //checking peimary key exsistance
 
             $query1 = "SELECT O_NIC FROM officer WHERE O_NIC=?";
