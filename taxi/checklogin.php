@@ -15,7 +15,7 @@ $username = $_POST['name'];
 $pw = $_POST['pwd'];
 
 
-include ('.\DBCon.php');
+include ('./DBCon.php');
 
 // preparing 
 $query = "SELECT password FROM officer_login WHERE user_name=?";
