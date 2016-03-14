@@ -94,7 +94,7 @@
                                                 </thead>
                                                 <tbody>
                                                     <?php
-                                                        include('DBCon.php');
+                                                        include('./DBCon.php');
                                                         $result = mysqli_query($con,"SELECT * FROM package");
                                                         while ($row = mysqli_fetch_array($result)){
                                                             echo '<tr>';
@@ -119,7 +119,7 @@
                                                     <select class="form-control" name="package-id">
                                                         <option> </option>
                                                         <?php
-                                                            include('DBCon.php');
+                                                            include('./DBCon.php');
                                                             $result = mysqli_query($con,"SELECT package_id FROM package");
                                                             while ($row = mysqli_fetch_array($result)){
                                                                 echo '<option>'.$row['package_id'].'</option>';
