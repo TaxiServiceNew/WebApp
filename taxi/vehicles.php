@@ -152,7 +152,7 @@
                                                     <select class="form-control" name="type_id">
                                                         <option> </option>
                                                         <?php
-                                                            include('DBCon.php');
+                                                            include('./DBCon.php');
                                                             $result = mysqli_query($con,"SELECT type_id FROM vehicle_type");
                                                             while ($row = mysqli_fetch_array($result)){
                                                                 echo '<option>'.$row['type_id'].'</option>';
@@ -196,7 +196,7 @@
                                                 </thead>
                                                 <tbody>
                                                     <?php
-                                                        include('DBCon.php');
+                                                        include('./DBCon.php');
                                                         $result = mysqli_query($con,"SELECT * FROM vehicle JOIN vehicle_type WHERE vehicle.type_id=vehicle_type.type_id");
                                                         while ($row = mysqli_fetch_array($result)){
                                                             echo '<tr>';
