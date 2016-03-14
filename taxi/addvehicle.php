@@ -11,7 +11,7 @@
             header('location: vehicles.php?msg=Fill all vehicle input data before submission.');
         } else {
 
-            include ('.\DBCon.php');
+            include ('./DBCon.php');
             //checking peimary key exsistance
 
             $query1 = "SELECT reg_number FROM vehicle WHERE reg_number=?";
