@@ -123,7 +123,7 @@
                                                     <select class="form-control" name="rank_id">
                                                         <option> </option>
                                                         <?php
-                                                        include('DBCon.php');
+                                                        include('./DBCon.php');
                                                         $result = mysqli_query($con, "SELECT rank_id FROM officer_rank");
                                                         while ($row = mysqli_fetch_array($result)) {
                                                             echo '<option>' . $row['rank_id'] . '</option>';
