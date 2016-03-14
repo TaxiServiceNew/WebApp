@@ -11,7 +11,7 @@
             header('location: vehicles.php?msg=Fill all vehicle input data before update.');
         } else {
 
-            include ('.\DBCon.php');
+            include ('./DBCon.php');
             //checking peimary key exsistance
             // preparing 
             $query = "UPDATE vehicle SET with_ac=?,type_id=?,seats=? WHERE reg_number=?";
