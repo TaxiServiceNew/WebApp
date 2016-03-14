@@ -16,7 +16,7 @@
             header('location: emb_devices.php?msg=Fill all input data before submission.');
         } else {
 
-            include ('.\DBCon.php');
+            include ('./DBCon.php');
             //checking peimary key exsistance
 
             $query1 = "SELECT device_id FROM device WHERE device_id=?";
