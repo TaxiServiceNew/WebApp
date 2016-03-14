@@ -16,7 +16,7 @@
             header('location: drivers.php?msg=Fill all input data before submission.');
         } else {
 
-            include ('.\DBCon.php');
+            include ('./DBCon.php');
             //checking peimary key exsistance
 
             $query1 = "SELECT d_nic FROM driver WHERE d_nic=?";
